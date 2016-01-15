@@ -37,7 +37,7 @@ impl App {
     }
 
     fn update(&mut self, args: &UpdateArgs) {
-        self.rotation += 2.0 * args.dt;
+        self.rotation += 20.0 * args.dt;
     }
 }
 
@@ -51,7 +51,7 @@ fn main() {
 
     let mut app = App {
         gl: GlGraphics::new(opengl),
-        rotation: 50.0
+        rotation: 0.0
     };
 
     let mut events = window.events();
